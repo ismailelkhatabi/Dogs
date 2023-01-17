@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Z-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Dogbook</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-------------------------NAV-------------------------->
+    <nav>
+      <div class="container">
+        <h2 class="log">Dogbook</h2>
+        <div class="search-bar">
+          <ion-icon name="search-outline"></ion-icon>
+          <input type="search" placeholder="Search for all the puppies" />
+        </div>
+        <div class="create">
+          <div class="profile-pic">
+            <img src="images/profile-1.jpg" />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!------------------------- MAIN -------------------------->
+    <main>
+      <div class="container">
+        <!--------------------LEFT------------------------>
+        <div class="left">
+          <!---------------PROFILE------------------>
+          <a class="profile">
+            <div class="profile-pic">
+              <img src="images/profile-1.jpg" />
+            </div>
+            <div class="handle">
+              <h4>Tibbo</h4>
+              <p class="text-muted">@tibboo_</p>
+            </div>
+          </a>
+
+          <!------------SIDEBAR-------------->
+          <div class="sidebar">
+            <a class="menu-item active">
+              <span><i class="uil uil-home"></i></span>
+              <h4>Home</h4>
+            </a>
+
+            <a class="menu-item">
+              <span><i class="uil uil-compass"></i></span>
+              <h4>Explore</h4>
+            </a>
+
+            <!--//////////////////////////////NOTIFICATION//////////////////////////////-->
+            <a class="menu-item" id="notifications">
+              <span
+                ><i class="uil uil-bell">
+                  <small class="notification-count">+6</small>
+                </i></span
+              >
+              <h4>Notifications</h4>
+
+              <div class="notification-popup">
+                <div>
+                  <div class="profile-pic">
+                    <img src="images/profile-2.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Monkey</b> accepted your friend request
+                    <small class="text-muted">2 DAYS AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="images/profile-3.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Daisy</b> commented on your post
+                    <small class="text-muted">1 HOUR AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="images/profile-4.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Chipiron</b> and <b>other 145</b> liked yout post
+                    <small class="text-muted">2 MINUTES AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="images/profile-5.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Buggie</b> commented on your post
+                    <small class="text-muted">2 HOUR AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="images/profile-6.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Cripto</b> commented on a post you are tagged
+                    <small class="text-muted">5 MINUTES AGO</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="images/profile-7.jpg" />
+                  </div>
+                  <div class="notification-body">
+                    <b>Galleta</b> commented on a post you are tagged
+                    <small class="text-muted">7 MINUTES AGO</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!--////////////////////////////////////////////////////////////////////////-->
+
+            <a class="menu-item" id="message-notification">
+              <span
+                ><i class="uil uil-envelope-alt">
+                  <small class="notification-count">8</small>
+                </i></span
+              >
+              <h4>Messages</h4>
+            </a>
+
+            <a class="menu-item">
+              <span><i class="uil uil-bookmark"></i></span>
+              <h4>Bookmark</h4>
+            </a>
+
+            <a class="menu-item">
+              <span><i class="uil uil-chart-line"></i></span>
+              <h4>Analytics</h4>
+            </a>
+
+            <a class="menu-item" id="theme">
+              <span><i class="uil uil-palette"></i></span>
+              <h4>Theme</h4>
+            </a>
+
+            <a class="menu-item">
+              <span><i class="uil uil-setting"></i></span>
+              <h4>Settings</h4>
+            </a>
+          </div>
+        </div>
+
+        <!--------------------MIDDLE------------------------>
+        <div class="middle">
+          <form class="create-post">
+            <div class="profile-pic">
+              <img src="images/profile-1.jpg" />
+            </div>
+            <input
+              type="text"
+              placeholder="What's on your mind, Tibbo?"
+              id="create-post"
+            />
+            <input type="submit" value="Post" class="btn btn-primary" />
+          </form>
+
+          <!--//////////////////////////////FEED//////////////////////////////-->
+          <div class="feeds">
+            <!--------------------------FEED 1------------------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="images/profile-8.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Maya</h3>
+                    <small>Siberia, 10 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="pic">
+                <img src="images/feed-1.jpg" />
+              </div>
+
+              <div class="action-button">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="images/profile-4.jpg" /></span>
+                <span><img src="images/profile-15.jpg" /></span>
+                <span><img src="images/profile-9.jpg" /></span>
+                <p>Liked by <b>Chipiron</b> and <b>256 others</b></p>
+              </div>
+
+              <div class="captio">
+                <p>
+                  <b>Maya</b> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit.
+                  <span class="hash-tag"></span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 150 comments</div>
+            </div>
+
+            <!--------------------------FEED 2------------------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="images/profile-9.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Dingo</h3>
+                    <small>California, 10 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="pic">
+                <img src="images/feed-2.jpg" />
+              </div>
+
+              <div class="action-button">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="images/profile-3.jpg" /></span>
+                <span><img src="images/profile-15.jpg" /></span>
+                <span><img src="images/profile-4.jpg" /></span>
+                <p>
+                  Liked by <b>Daisy</b>, <b>Chipiron</b> and <b>123 others</b>
+                </p>
+              </div>
+
+              <div class="captio">
+                <p>
+                  <b>Dingo</b> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit.
+                  <span class="hash-tag"></span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 150 comments</div>
+            </div>
+            <!--------------------------FEED 3------------------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="images/profile-19.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Garbanzo</h3>
+                    <small> Dubai, 10 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="pic">
+                <img src="images/feed-7.jpg" />
+              </div>
+
+              <div class="action-button">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="images/profile-18.jpg" /></span>
+                <span><img src="images/profile-1.jpg" /></span>
+                <span><img src="images/profile-2.jpg" /></span>
+                <p>Liked by <b>Me</b>, <b>Monkey</b> and <b>175 others</b></p>
+              </div>
+
+              <div class="captio">
+                <p>
+                  <b>Garbanzo</b> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit.
+                  <span class="hash-tag"></span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 96 comments</div>
+            </div>
+            <!--------------------------FEED 4------------------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="images/profile-16.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Akira</h3>
+                    <small>Japan, 10 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="pic">
+                <img src="images/feed-8.jpg" />
+              </div>
+
+              <div class="action-button">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="images/profile-6.jpg" /></span>
+                <span><img src="images/profile-14.jpg" /></span>
+                <span><img src="images/profile-5.jpg" /></span>
+                <p>
+                  Liked by <b>Buggie</b>, <b>Cripto</b> and <b>500 others</b>
+                </p>
+              </div>
+
+              <div class="captio">
+                <p>
+                  <b>Akira</b> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit.
+                  <span class="hash-tag"></span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 260 comments</div>
+            </div>
+            <!--------------------------FEED 5------------------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="images/profile-13.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Gumbo</h3>
+                    <small>Suiza , 30 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="pic">
+                <img src="images/feed-6.jpg" />
+              </div>
+
+              <div class="action-button">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="images/profile-16.jpg" /></span>
+                <span><img src="images/profile-8.jpg" /></span>
+                <span><img src="images/profile-2.jpg" /></span>
+                <p>Liked by <b>Akira</b> and <b>500 others</b></p>
+              </div>
+
+              <div class="captio">
+                <p>
+                  <b>Gumbo</b> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit.
+                  <span class="hash-tag"></span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 260 comments</div>
+            </div>
+            <!--------------------------FEED 6------------------------------->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="images/profile-11.jpg" />
+                  </div>
+                  <div class="ingo">
+                    <h3>Newton</h3>
+                    <small>Pembrokeshire , 40 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </span>
+              </div>
+
+              <div class="pic">
+                <img src="images/feed-4.jpg" />
+              </div>
+
+              <div class="action-button">
+                <div class="interaction-button">
+                  <span><i class="uil uil-heart"></i></span>
+                  <span><i class="uil uil-comment-dots"></i></span>
+                  <span><i class="uil uil-share-alt"></i></span>
+                </div>
+                <div class="bookmark">
+                  <span><i class="uil uil-bookmark-full"></i></span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="images/profile-10.jpg" /></span>
+                <span><img src="images/profile-12.jpg" /></span>
+                <span><img src="images/profile-18.jpg" /></span>
+                <p>Liked by <b>630 others</b></p>
+              </div>
+
+              <div class="captio">
+                <p>
+                  <b>Newton</b> Lorem ipsum dolor sit amet, consectetur
+                  adipisicing elit.
+                  <span class="hash-tag"></span>
+                </p>
+              </div>
+              <div class="comments text-muted">View all 620 comments</div>
+            </div>
+          </div>
+          <!--////////////////////////////////////////////////////////////////-->
+        </div>
+
+        <!--------------------RIGHT------------------------>
+        <div class="right">
+          <!--////////////////////////////////MESSAGES////////////////////////////////-->
+          <div class="messages">
+            <div class="heading">
+              <h4>Messages</h4>
+              <ion-icon name="create-outline"></ion-icon>
+            </div>
+
+            <div class="search-bar">
+              <input
+                type="search"
+                placeholder="Search for messages"
+                id="message-search"
+              />
+            </div>
+
+            <div class="category">
+              <h6 class="active">Primary</h6>
+              <h6>General</h6>
+              <h6 class="message-requests">Request (5)</h6>
+            </div>
+
+            <!--------MESSAGE 1-------->
+            <div class="message">
+              <div class="profile-pic">
+                <img src="images/profile-5.jpg" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Buggie</h5>
+                <p>Let s go 4 barf meal¿</p>
+              </div>
+            </div>
+            <!--------MESSAGE 2-------->
+            <div class="message">
+              <div class="profile-pic">
+                <img src="images/profile-6.jpg" />
+              </div>
+              <div class="message-body">
+                <h5>Cripto</h5>
+                <p>Coming 2 the party tmr?</p>
+              </div>
+            </div>
+            <!--------MESSAGE 3-------->
+            <div class="message">
+              <div class="profile-pic">
+                <img src="images/profile-17.jpg" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Lesley</h5>
+                <p>U r so cute !</p>
+              </div>
+            </div>
+            <!--------MESSAGE 4-------->
+            <div class="message">
+              <div class="profile-pic">
+                <img src="images/profile-2.jpg" />
+              </div>
+              <div class="message-body">
+                <h5>Monkey</h5>
+                <p>3 new messages</p>
+              </div>
+            </div>
+            <!--------MESSAGE 5-------->
+            <div class="message">
+              <div class="profile-pic">
+                <img src="images/profile-13.jpg" />
+                <div class="active"></div>
+              </div>
+              <div class="message-body">
+                <h5>Gumbo</h5>
+                <p>SUP?</p>
+              </div>
+            </div>
+          </div>
+          <!--////////////////////////////////////////////////////////////////-->
+
+          <!--////////////////////////////////REQUEST////////////////////////////////-->
+          <div class="friend-requests">
+            <h4>Requests</h4>
+            <!----------------------------------------------------------------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-pic">
+                  <img src="images/profile-20.jpg" />
+                </div>
+                <div>
+                  <h5>Chococrisp</h5>
+                  <p class="text-muted">6 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!----------------------------------------------------------------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-pic">
+                  <img src="images/profile-18.jpg" />
+                </div>
+                <div>
+                  <h5>Tenz</h5>
+                  <p class="text-muted">2 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!----------------------------------------------------------------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-pic">
+                  <img src="images/profile-10.jpg" />
+                </div>
+                <div>
+                  <h5>Teddy</h5>
+                  <p class="text-muted">3 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!----------------------------------------------------------------->
+            <!----------------------------------------------------------------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-pic">
+                  <img src="images/profile-12.jpg" />
+                </div>
+                <div>
+                  <h5>Sandy</h5>
+                  <p class="text-muted">10 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!----------------------------------------------------------------->
+            <!----------------------------------------------------------------->
+            <div class="request">
+              <div class="info">
+                <div class="profile-pic">
+                  <img src="images/profile-15.jpg" />
+                </div>
+                <div>
+                  <h5>Rory</h5>
+                  <p class="text-muted">6 mutual friends</p>
+                </div>
+              </div>
+              <div class="action">
+                <button class="btn btn-primary">Accept</button>
+                <button class="btn">Decline</button>
+              </div>
+            </div>
+            <!----------------------------------------------------------------->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!----------------------------THEME--------------------------->
+    <div class="customize-theme">
+      <div class="card">
+        <h2>Theme</h2>
+        <div class="background">
+          <div class="choose-bg">
+            <div class="bg-light active">
+              <span></span>
+              <h5 for="bg-light">Light</h5>
+            </div>
+            <div class="bg-dim">
+              <span></span>
+              <h5 for="bg-dim">Dim</h5>
+            </div>
+            <div class="bg-dark">
+              <span></span>
+              <h5 for="bg-dark">Dark</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="js.js"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>
